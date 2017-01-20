@@ -1,0 +1,33 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/clothes/clothes"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "绿番茄服装店",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#268dcd",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "衣服",
+        "iconPath": "images/clothes.png",
+        "selectedIconPath": "images/clothes_selected.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "看过的",
+        "iconPath": "images/like.png",
+        "selectedIconPath": "images/like_selected.png"
+      }
+    ]
+  }
+}

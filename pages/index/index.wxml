@@ -1,0 +1,9 @@
+<import src="../templates/item.wxml"/>
+
+<scroll-view scroll-y="true" class="product-container" bindscrolltolower="loadMore" lower-threshold="100">
+  <template is="clothesItem" data="{{item}}" wx:for="{{clothesList}}"/>
+</scroll-view>
+
+<loading hidden="{{loadingHide}}">
+    加载中...
+</loading>
