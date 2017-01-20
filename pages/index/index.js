@@ -1,4 +1,3 @@
-//index.js
 var app = getApp()
 Page({
   data: {
@@ -8,11 +7,16 @@ Page({
   onLoad() {
     setTimeout(() => {
       this.setData({
-        clothesList: [{title: "football", price: "10,00", imageUrl: "../../images/ozil.jpg", images: 
+        clothesList: [{title: "ozil", price: "10,00", imageUrl: "../../images/ozil.jpg", images: 
         [{title: "ozil", url: "../../images/ozil.jpg"}, {title: "sanchez", url: "../../images/sanchez.jpg"}, {title: "giroud", url: "../../images/giroud.jpg"}, {title: "walcott", url: "../../images/walcott.jpg"}, {title: "mustafi", url: "../../images/mustafi.jpg"}], id: 1},
-        {title: "football", price: "10,00", imageUrl: "../../images/football1.jpg", id: 2},
-        {title: "football", price: "10,00", imageUrl: "../../images/football1.jpg", id: 3},
-        {title: "football", price: "10,00", imageUrl: "../../images/football1.jpg", id: 4}],
+        {title: "sanchez", price: "10,00", imageUrl: "../../images/sanchez.jpg", images: 
+        [{title: "ozil", url: "../../images/ozil.jpg"}, {title: "sanchez", url: "../../images/sanchez.jpg"}, {title: "giroud", url: "../../images/giroud.jpg"}, {title: "walcott", url: "../../images/walcott.jpg"}, {title: "mustafi", url: "../../images/mustafi.jpg"}], id: 1},
+        {title: "giroud", price: "10,00", imageUrl: "../../images/giroud.jpg", images: 
+        [{title: "ozil", url: "../../images/ozil.jpg"}, {title: "sanchez", url: "../../images/sanchez.jpg"}, {title: "giroud", url: "../../images/giroud.jpg"}, {title: "walcott", url: "../../images/walcott.jpg"}, {title: "mustafi", url: "../../images/mustafi.jpg"}], id: 1},
+        {title: "walcott", price: "10,00", imageUrl: "../../images/walcott.jpg", images: 
+        [{title: "ozil", url: "../../images/ozil.jpg"}, {title: "sanchez", url: "../../images/sanchez.jpg"}, {title: "giroud", url: "../../images/giroud.jpg"}, {title: "walcott", url: "../../images/walcott.jpg"}, {title: "mustafi", url: "../../images/mustafi.jpg"}], id: 1},
+        {title: "mustafi", price: "10,00", imageUrl: "../../images/mustafi.jpg", images: 
+        [{title: "ozil", url: "../../images/ozil.jpg"}, {title: "sanchez", url: "../../images/sanchez.jpg"}, {title: "giroud", url: "../../images/giroud.jpg"}, {title: "walcott", url: "../../images/walcott.jpg"}, {title: "mustafi", url: "../../images/mustafi.jpg"}], id: 1}],
         loadingHide: true
       });
     }, 1000)
@@ -24,7 +28,6 @@ Page({
   },
   itemTap(event) {
     let item = event.currentTarget.dataset.item;
-    
     wx.navigateTo({
       url: '../clothes/clothes?item=' + JSON.stringify(item),
       success: function(res){

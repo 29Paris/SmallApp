@@ -1,8 +1,7 @@
 <template name="clothesItem">
-    <view data-item="{{item}}" bindtap="itemTap">
+    <view data-item="{{item}}" bindtap="itemTap" class="item-container">
         <image src="{{item.imageUrl}}" mode="aspectFit" data-url="{{item.imageUrl}}"/>
-        <!--<text class="clothes-title">{{item.title}}</text>
-        <text class="clothes-price">{{item.price}}</text>-->
-        <text class="clothes-price">id: {{item.id}}</text>
+        <text class="item-title">{{item.title}}</text>
+        <text class="item-price">{{item.price}}</text>
     </view>
 </template>
