@@ -1,0 +1,14 @@
+{
+  "name": "node learning",
+  "version": "0.0.1",
+  "description": "Nodejs",
+  "dependencies": {},
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.0.0"
+  }
+}
